@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #ee4d2d;
+    --primary-color-rgba: rgb(238, 75, 43);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    /*Áp dụng nếu header về sau có thay đổi chiều cao thì không bị ảnh hưởng*/
+
+    --header-sort-bar-height: 46px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/*1rem = 16px ở 100% còn 1rem = 10px ở 62.5%*/
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive: sử dụng %(tương đối) để nó thích nghi theo màn hình */
+/*Ứng dụng Responsive 12 column*/
+/*Để tính 1 column thì ta lấy tổng kích thước màn hình là 100% chia cho 12 column = 8.33333%*/
+/*Nguyên tắc 3 cấp, trong grid có nhiều row, trong row có nhiều column*/
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px; /*Vì khoảng cách giữa 2 column trên pc mặc định là 12px (Có thể đổi) */
+    margin-right: -5px;
+}
+
+/*Test Chuẩn bị cho responsive*/
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+    /*Nên làm tròn sau 3 số, vì 2 column nên ta lấy 8.3332 x2 = 16.6667*/
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3332%;
+}
+
+/*Đặt tên theo tỉ lệ cột (Mô hình 12 cột):
+Ta lấy 12 cột chia cho "5 cột" = 2.4 cột*/
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    /*Sau khi chia 12 cột thành 1 column(2 cột) và 1 column(10 cột),
+    ta tiếp tục lấy tỉ lệ column(10 cột) là 100% chia cho 5(ở đây là 5 sản phẩm) = 20%*/
+}
+
+/*Animation*/
+@keyframes inFade {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+    transform: scale(var(--growth-from));
+    }
+    to {
+    transform: scale(var(--growth-to));
+    }
+}
+
+/*Modal layout*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    animation: growth linear 0.2s;
+}
+
+/* .modal__inner{
+
+} */
+
+/*Button style*/
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--white-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+} /*Select tới element nào mà chứa cả 2 class nếu 1 trong 2 mà thiếu của element đó thì css này sẽ không có tác dụng. Có thể css 3 class++*/
+
+.btn.btn--disable {
+    cursor: default;
+    filter: brightness(80%); /*Giảm độ sáng cửa 1 element*/
+} /*Về sau nếu khi dev muốn người dùng chưa nhập gì thì btn này bị vô hiệu do đó nên ta thêm class riêng cho thằng btn*/
+
+.btn.btn--size-s {
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
+
+/*Selection*/
+.select-input{
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    cursor: pointer;
+    background-color: var(--white-color);
+    z-index: 111;
+}
+
+.select-input::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+}
+
+.select-input__icon{
+    font-size: 1.4rem;
+    color: rgba(131, 131, 131, 0);
+    position: relative;
+    top: 1px;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    animation: inFade ease-in 0.2s;
+    display: none;
+}
+
+.select-input__link{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover{
+    color: var(--primary-color);
+}
+
+/*Pagination*/
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.pagination-item{
+    margin: 0 16px;
+    list-style: none;
+}
+
+.pagination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover{
+    filter: brightness(96%);
+}
+
+.pagination-item__link{
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    color: #939393;
+    border-radius: 2px;
+}
+
+.pagination-item__icon{
+
+}

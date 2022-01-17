@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+
+                            <!-- Header QR code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/qrcode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/googleplay.png" alt="Google Play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/applestore.png" alt="Apple Store" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">
+                                Kết nối
+                            </span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>
+                                        Thông báo mới nhận
+                                    </h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/yugioh.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    HỘP BÀI YUGIOH MAXIMUM GOLD: EL DORADO YUGIOH - NHẬP KHẨU TỪ ANH QUỐC UK
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Số lượng sản phẩm trong kho: Vẫn còn hàng 899.000 VNĐ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/yugioh2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Số lượng sản phẩm trong kho: Vẫn còn hàng 599.000 VNĐ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/yugioh3.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    BURST OF DESTINY BOOSTER BOX - 24 BOOSTER PACK SEALED KONAMI - NHẬP KHẨU TỪ ANH QUỐC UK
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Số lượng sản phẩm trong kho: Vẫn còn hàng 1.990.000 VNĐ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/userimg.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Yugioh Pro Player</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <!-- Header Mobile Wrap -->
+                    <div class="header-mobile-wrap-left">
+                        <!-- Nav Mobile -->
+                        <div class="nav__mobile">
+                            <label for="nav__mobile-input" class="nav__mobile-btn">
+                                <i class="nav__mobile-icon fas fa-bars"></i>
+                            </label>
+                            <input type="checkbox" name="" class="nav__input" id="nav__mobile-input">
+                            <label for="nav__mobile-input" class="nav__mobile-overlay"></label>
+                            <nav class="nav__mobile-wrap">
+                                <label for="nav__mobile-input" class="nav__mobile-close">
+                                    <i class="nav__mobile-icon-close fas fa-times"></i>
+                                </label>
+                                <ul class="nav__mobile-list">
+                                    <li class="nav__mobile-item">
+                                        <a href="" class="nav__mobile-link">
+                                            Tài khoản của tôi
+                                        </a>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <a href="" class="nav__mobile-link">
+                                            Địa chỉ của tôi
+                                        </a>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <a href="" class="nav__mobile-link">
+                                            Đơn mua
+                                        </a>
+                                    </li>
+                                    <li class="nav__mobile-item">
+                                        <a href="" class="nav__mobile-link">
+                                            Đăng xuất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- Search Mobile -->
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                        </label>
+                    </div>
+
+                    <div class="header__logo hide-on-tablet">
+                        <a href="/" class="header__logo-link">
+                            <img src="./assets/img/logo.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+
+                    <!-- Khi mà ở mobile và thẻ input này được checked thì ta show header__search lên ở mobile -->
+                    <input type="checkbox" hidden class="header__search-checkbox" id="mobile-search-checkbox">
+                    <div class="header__search">
+                        <div class="header__search-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-header">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">
+                                            Yugioh Box
+                                        </a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">
+                                            Yugioh Paraoh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-selections">
+                            <span class="header__search-selections-label">
+                                Trong shop
+                            </span>
+                            <i class="header__search-selections-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-options">
+                                <li class="header__search-options-item header__search-options-item--active">
+                                    <span>
+                                        Trong shop
+                                    </span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-options-item">
+                                    <span>
+                                        Ngoài shop
+                                    </span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- Header Mobile wrap right -->
+                    <div class="header-mobile-wrap-right">
+                        <!-- Header Cart Layout -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fas fa-shopping-cart">
+                                    <span class="header__cart-notice">3</span>
+                                </i>
+
+                                <!-- No cart: Add class header__cart-list--no-cart -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+
+                                    <h4 class="header__cart-heading">
+                                        Sản phẩm đã thêm
+                                    </h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/yugioh4.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        ANCIENT GUARDIANS BOOSTER BOX YUGIOH - 24 PACKS SEALED - NHẬP KHẨU TỪ ANH QUỐC UK
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">
+                                                            2.000.000 Đ
+                                                        </span>
+                                                        <span class="header__cart-item-multiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-item-qtt">
+                                                            2
+                                                        </span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Hot
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xoá
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/yugioh4.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Yugioh Kuriboh
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">
+                                                            2.000.000 Đ
+                                                        </span>
+                                                        <span class="header__cart-item-multiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-item-qtt">
+                                                            2
+                                                        </span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Hot
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xoá
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/yugioh4.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Yugioh Kuriboh
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">
+                                                            2.000.000 Đ
+                                                        </span>
+                                                        <span class="header__cart-item-multiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-item-qtt">
+                                                            2
+                                                        </span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Hot
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xoá
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/yugioh4.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Yugioh Kuriboh
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">
+                                                            2.000.000 Đ
+                                                        </span>
+                                                        <span class="header__cart-item-multiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-item-qtt">
+                                                            2
+                                                        </span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Hot
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xoá
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/yugioh5.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Yugioh Kuriboh
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">
+                                                            2.000.000 Đ
+                                                        </span>
+                                                        <span class="header__cart-item-multiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-item-qtt">
+                                                            2
+                                                        </span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Hot
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xoá
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/yugioh6.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Yugioh Kuriboh
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">
+                                                            2.000.000 Đ
+                                                        </span>
+                                                        <span class="header__cart-item-multiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-item-qtt">
+                                                            2
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Hot
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xoá
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="header__cart-view-cart btn btn--primary">
+                                        Xem giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Account Mobile -->
+                        <div class="header__mobile-account">
+                            <img src="./assets/img/userimg.jpg" alt="" class="header__mobile-account-icon">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <!-- (li.header__sort-item>a.header__sort-link)*4 -->
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <!-- Nguyên tắc 3 cấp, trong grid có nhiều row, trong row có nhiều column -->
+                <!-- Vì column phải nằmg trong row nên ta wrap thằng column bên trong row -->
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list"></i>
+                                Danh mục
+                            </h3>
+
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <!-- Coi thẻ li này là block theo qui tắc bem -->
+                                    <a href="#" class="category-item__link">
+                                        Bài lẻ Yugioh
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Yugioh nguyên hộp
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Phụ kiện Yugioh
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Playmats
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Sản phẩm giảm giá
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">
+                                Sắp xếp theo
+                            </span>
+                            <button class="home-filter__btn btn">
+                                Phổ biến
+                            </button>
+                            <button class="home-filter__btn btn btn--primary">
+                                Mới nhất
+                            </button>
+                            <button class="home-filter__btn btn">
+                                Bán chạy
+                            </button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+
+                                <!-- List Options -->
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vùng chứa liên kết website và bao bên ngoài bằng thẻ nav -->
+                        <!-- Để hiển thị danh mục ở mobile -->
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Bài lẻ Yugioh</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Yugioh nguyên hộp</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Phụ kiện Yugioh</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm giảm giá</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm hot</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm US/UK/JP</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm US/UK/JP</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm US/UK/JP</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm US/UK/JP</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sản phẩm US/UK/JP/KR/CN/VN</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="home-product">
+                            <!-- Grid -> Row -> Column: Đã tạo bên base -->
+                            <!-- Tạo Row mà tại sao không tạo Column trước theo design là vì chúng ta phải tuân thủ theo nguyên tắc trên -->
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Tạo khung sản phẩm -->
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/yugioh2.jpg)"></div>
+                                        <h4 class="home-product-item__name">
+                                            TIN OF ANCIENT BATTLES - YUGIOH MEGA TIN 2021 - NHẬP KHẨU TỪ HOA KỲ USA
+                                        </h4>
+                                        <!-- 2 đối tượng mà nằm trên một hàng ngang thì ta thêm 1 thẻ bao bọc lại (ở đây ta sử dụng: div) -->
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                1.200.000 Đ
+                                            </span>
+                                            <span class="home-product-item__price-current">
+                                                999.000 Đ
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating ">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">
+                                                Konami
+                                            </span>
+                                            <span class="home-product-item__origin-name">
+                                                USA
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>
+                                                Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="grid__row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">F8-shop mail</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Yugioh nguyên hộp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Bài lẻ Yugioh</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Phụ kiện Yugioh</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <h3 class="footer__heading">Vào cửa hàng trong ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/qrcode.png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/googleplay.png" alt="Google Play" class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/applestore.png" alt="App Store" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                        <p class="footer__text">© 2022 - Bản quyền thuộc về Công ty MyCv</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal overlay -->
+        <!-- <div class="modal">
+            <div class="modal__overlay">
+
+            </div>
+            <div class="modal__body"> -->
+                <!-- Signup Form -->
+                <!-- <div class="auth-form">
+
+                    <div class="auth-form__container">
+
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy">
+                                Bằng việc đăng ký, bạn đã đồng ý với shop về
+                                <a href="" class="auth-form__text-link">
+                                    Điều khoản dịch vụ
+                                </a>&
+                                <a href="" class="auth-form__text-link">
+                                    Chính sách bảo mật
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--facebook">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                        </a>
+
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--google">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                        </a>
+                    </div>
+
+                </div> -->
+
+                <!-- Login Form -->
+                <!-- <div class="auth-form">
+
+                    <div class="auth-form__container">
+
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--facebook">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                        </a>
+
+                        <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--google">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                        </a>
+                    </div>
+
+                </div> -->
+            <!-- </div>
+        </div> -->
+    </div>
+</body>
+</html>
