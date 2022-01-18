@@ -76,9 +76,10 @@
     position: absolute;
     z-index: 1; /*Là thuộc tính của position*/
     top: 100%;
-    right: 0;
+    right: 50%;
+    transform: translateX(50%);
     padding-left: 0;
-    width: calc(100% + 30px);
+    width: 160px;
     background-color: var(--white-color);
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 2px;
@@ -1198,8 +1199,8 @@
     color: var(--white-color);
     text-align: center;
     overflow: hidden;
-    display: block;
-    display: -webkit-box;
+    display: -webkit-box; /*Lưu ý: phải để display: block sau -webkit-box*/
+    display: block; 
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     width: 110px;
@@ -1210,6 +1211,7 @@
     user-select: none;
     -webkit-user-select: none;
     padding: 0 6px;
+    text-overflow: ellipsis;
 }
 
 

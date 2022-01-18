@@ -140,4 +140,8 @@
     .footer__content{
         padding: 0 16px;
     }
+
+    .footer__heading{
+        text-align: center;
+    }
 }
